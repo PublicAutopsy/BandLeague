@@ -1,8 +1,4 @@
 
-/**
- * Module dependencies.
- */
-
 var express = require('express')
   , routes = require('./routes')
   , user = require('./routes/user')
@@ -11,6 +7,8 @@ var express = require('express')
   , path = require('path');
 
 var app = express();
+
+require('./db');
 
 // all environments
 app.set('port', process.env.PORT || 3000);
