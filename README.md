@@ -1,15 +1,15 @@
 Onboarding
 ==========
 
-$~ mongod
+$~ mongod  <br/>
 $~ npm install
 
 
 Route Structures
 ================
 
-/
-/users/
-/users/1
-/bands/
+/  <br/>
+/users/   <br/>
+/users/1  <br/>
+/bands/     <br/>
 /bands/1
