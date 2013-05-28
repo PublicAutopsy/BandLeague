@@ -26,12 +26,16 @@ if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
 
+//General System routes
 app.get('/', routes.index);
+app.get('/dashboard', routes.dashboard);
 
+//User Routes
 app.get('/users', user.index);
 app.get('/users/:uID', user.index);
 
-app.get('/bands/', band.index);
+//Band Routes
+app.get('/bands', band.index);
 app.get('/bands/:bID', band.index);
 
 http.createServer(app).listen(app.get('port'), function(){
